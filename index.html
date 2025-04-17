@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaylistProject</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-top-icon">
+            <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="container-img">
+            <img class="img"  alt="">
+        </div>
+        <div class="container-text">
+            <p class="sing-song"></p>
+            <p class="single-name"></p>
+        </div>
+        <div class="container-icon">
+            <i class="bi bi-shuffle"></i>
+            <i class="bi bi-skip-start-fill"></i>
+            <i class="bi bi-play-circle-fill"></i>
+            <i class="bi bi-pause-circle-fill hide"></i>
+            <i class="bi bi-skip-end-fill"></i>
+            <i class="bi bi-repeat"></i>
+        </div>
+        <audio src="assets/gelo-ew-ki-bu.mp3" loop id="audio" preload="metadata"></audio>
+        <div id="progress-bar">
+            <div id="current-progress">
+
+            </div>
+        </div>
+        <div class="container-time">
+            <span id="current-time">0:00</span>
+            <span id="max-duration">04.21</span>
+        </div>
+        <div class="sing-list hide">
+            <i class="bi bi-x-lg"></i>
+            <ul id="playlist-songs"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
